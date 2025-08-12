@@ -74,23 +74,35 @@ export const SkillData = [
     width: 40,
     height: 40,
   },
+  {
+    name: "Prisma ORM",
+    Image: "https://www.svgrepo.com/show/354210/prisma.svg",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "PostgresQL",
+    Image: "https://www.svgrepo.com/show/303301/postgresql-logo.svg",
+    width: 80,
+    height: 80,
+  },
 ];
 
 export const Socials = [
   {
     name: "LinkedIn",
     src: "https://www.svgrepo.com/show/157006/linkedin.svg",
-    link:"https://www.linkedin.com/in/ishan-saini-49b6842a6/"
+    link: "https://www.linkedin.com/in/ishan-saini-49b6842a6/",
   },
   {
     name: "Twitter",
     src: "https://www.svgrepo.com/show/475689/twitter-color.svg",
-    link:"https://x.com/saini_isha57790"
+    link: "https://x.com/saini_isha57790",
   },
   {
     name: "Github",
     src: "https://www.svgrepo.com/show/217753/github.svg",
-    link:"https://github.com/Webdev-Ishan"
+    link: "https://github.com/Webdev-Ishan",
   },
 ];
 export const Projects = [
