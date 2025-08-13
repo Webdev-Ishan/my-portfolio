@@ -107,24 +107,24 @@ export const Socials = [
 ];
 export const Projects = [
   {
-    title: "Modern Nextjs Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/NextWebsite.png",
+    title: "SpellBeats a modern SAAS",
+    text: "Spellbeats is a SaaS platform that enables creators to convert YouTube videos into audio format and curate shareable playlists accessible via their public profiles. Built with Next.js, Prisma, and NextAuth.js",
+    src: "/spellbeats.png",
   },
   {
-    title: "Space Themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/SpaceWebsite.png",
+    title: "Mindvault A second Brain",
+    text: "MindVault is a second brain productivity application designed to help users save, organize, and manage important links in one secure location. Developed with Next.js, Prisma, and NextAuth.js ",
+    src: "/mindvault.png",
+  },
+  {
+    title: "Transactify A modern payment platform",
+    text: "Transictify is your intelligent transport and logistics companion, designed to simplify how goods move from one place to another.",
+    src: "/Transactify.png",
   },
   {
     title: "Modern Nextjs Portfolio",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    text: "My Potfolio website for showcasing the skills and projects that I have and worked on.",
     src: "/WebPortfolio.png",
-  },
-  {
-    title: "Matrix themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/Matrix.png",
   },
 ];
 
