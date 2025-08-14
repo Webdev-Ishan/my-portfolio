@@ -8,7 +8,7 @@ import React from "react";
 const Page = () => {
   return (
     <div
-      style={{ backgroundImage: "url(/mountains.jpg)" }}
+      style={{ backgroundImage: "url(/Mountains.jpg)" }}
       className="w-screen min-h-screen bg-center bg-cover bg-fixed"
     >
       <div className="max-w-7xl mx-auto px-4  sm:px-6 lg:px-8 pt-16 sm:pt-20 pb-10 sm:pb-12">
