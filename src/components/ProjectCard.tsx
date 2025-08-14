@@ -18,7 +18,7 @@ const ProjectCard = ({ image, title, text }: Props) => {
   return (
     <div
       onClick={handleFlip}
-      className="w-[350px] shadow-md hover:shadow-blue-500 h-[250px] cursor-pointer perspective"
+      className="w-[90%] sm:w-[320px] md:w-[350px] aspect-[4/3] shadow-lg hover:shadow-blue-500 rounded-xl cursor-pointer perspective"
     >
       <motion.div
         className="relative w-full h-full"
@@ -31,11 +31,14 @@ const ProjectCard = ({ image, title, text }: Props) => {
         <div
           style={{
             backgroundImage: `url(${image})`,
+            backfaceVisibility: "hidden",
           }}
-          className="absolute w-full h-full bg-cover bg-center rounded-xl shadow-lg flex items-center justify-center text-white font-semibold text-lg"
+          className="absolute w-full h-full bg-cover bg-center rounded-xl overflow-hidden shadow-lg flex items-center justify-center text-white font-semibold text-lg"
         >
-          <div className="absolute inset-0 bg-black/30 rounded-xl flex items-center justify-center opacity-0 hover:opacity-100 transition">
-            Learn More &gt;
+          <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+            <span className="bg-blue-500 px-4 py-2 rounded-lg text-white text-sm sm:text-base shadow-md">
+              Learn More &gt;
+            </span>
           </div>
         </div>
 
@@ -46,12 +49,16 @@ const ProjectCard = ({ image, title, text }: Props) => {
             transform: "rotateY(180deg)",
             backfaceVisibility: "hidden",
           }}
-          className="absolute w-full h-full bg-cover bg-center rounded-xl shadow-lg text-white px-5 py-6"
+          className="absolute w-full h-full bg-cover bg-center rounded-xl shadow-lg overflow-hidden"
         >
-          <div className="absolute inset-0 bg-black/60 rounded-xl" />
-          <div className="relative z-10 flex flex-col justify-center gap-4 h-full">
-            <h1 className="text-2xl text-blue-500 font-bold">{title}</h1>
-            <p className="text-gray-200 text-base">{text}</p>
+          <div className="absolute inset-0 bg-black/70" />
+          <div className="relative z-10 flex flex-col justify-center gap-3 h-full p-4 sm:p-6">
+            <h1 className="text-xl sm:text-2xl text-blue-400 font-bold text-center">
+              {title}
+            </h1>
+            <p className="text-gray-200 text-sm sm:text-base text-center leading-relaxed">
+              {text}
+            </p>
           </div>
         </div>
       </motion.div>
