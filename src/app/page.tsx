@@ -73,23 +73,27 @@ export default function Home() {
       </div>
 
       {/* Foreground Images */}
-      <div className="absolute bottom-0 right-0 z-[10] flex flex-col items-center">
-        <Image
-          src="/horse.png"
-          alt="horse"
-          height={250}
-          width={250}
-          className="w-[150px] md:w-[250px] h-auto mb-[-40px] md:mb-[-60px]"
-          priority
-        />
-        <Image
-          src="/cliff.webp"
-          alt="cliff"
-          width={380}
-          height={380}
-          className="w-[250px] md:w-[380px] h-auto"
-        />
-      </div>
+      <div className="absolute bottom-0 right-0 z-[50] flex flex-col items-center">
+  <div className="relative">
+    <Image
+      src="/cliff.webp"
+      alt="cliff"
+      width={380}
+      height={380}
+      className="w-[250px] md:w-[380px] h-auto"
+      priority
+    />
+    <Image
+      src="/horse.png"
+      alt="horse"
+      height={250}
+      width={250}
+      className="absolute top-0 md:top-32 left-1/2 -translate-x-1/2 w-[150px] md:w-[250px] h-auto"
+      priority
+    />
+  </div>
+</div>
+
 
       {/* Trees Layer */}
       <div className="absolute bottom-0 z-[5] w-full h-auto">
