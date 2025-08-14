@@ -26,16 +26,16 @@ const Navbar = () => {
       </div>
 
       <div className="flex flex-row gap-5 mb-2">
-        {Socials.map((social,idx) => (
-            <a href={social.link} key={idx}>
-          <Image
-          className="cursor-pointer"
-            key={social.name}
-            src={social.src}
-            alt={social.name}
-            width={28}
-            height={28}
-          />
+        {Socials.map((social, idx) => (
+          <a href={social.link} key={idx}>
+            <Image
+              className="cursor-pointer shadow-md transition duration-300 hover:shadow-blue-500 "
+              key={social.name}
+              src={social.src}
+              alt={social.name}
+              width={28}
+              height={28}
+            />
           </a>
         ))}
       </div>
