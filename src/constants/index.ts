@@ -71,8 +71,8 @@ export const SkillData = [
   {
     name: "Mongo db",
     Image: "/mongodb.png",
-    width: 40,
-    height: 40,
+    width: 10,
+    height: 10,
   },
   {
     name: "Prisma ORM",
