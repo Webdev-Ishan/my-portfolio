@@ -32,7 +32,7 @@ export default function Home() {
               href="/my-skills"
               className="rounded-[20px] bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white transition-colors"
             >
-             My Skills
+              My Skills
             </Link>
             <Link
               href="/my-projects"
@@ -56,7 +56,7 @@ export default function Home() {
           href="/my-skills"
           className="rounded-[20px] bg-blue-500 px-5 py-3 text-lg text-white text-center w-full"
         >
-         My Skills
+          My Skills
         </Link>
         <Link
           href="/my-projects"
@@ -73,13 +73,14 @@ export default function Home() {
       </div>
 
       {/* Foreground Images */}
-      <div className="absolute bottom-0 right-0 z-[10]">
+      <div className="absolute bottom-0 right-0 z-[10] flex flex-col items-center">
         <Image
           src="/horse.png"
           alt="horse"
           height={250}
           width={250}
-          className="absolute right-10 top-20 md:right-20 md:top-40 w-[150px] md:w-[250px] h-auto"
+          className="w-[150px] md:w-[250px] h-auto mb-[-40px] md:mb-[-60px]"
+          priority
         />
         <Image
           src="/cliff.webp"
